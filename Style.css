@@ -1,0 +1,182 @@
+:root{
+    --primary-color: blue;
+    --secondary-color: #e02b2b;
+    font-family: Roboto;
+}
+body{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+#header{
+    background: url("images/equipment1.jpg") no-repeat
+    center center/cover;
+    /* overflow-x:hidden; */
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #e02b2b; */
+}
+.quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+    /* background-color: #e02b2b; */
+}
+.why{
+    
+    
+    margin-top: 200px;
+    margin-left: -220px;
+    background: #fff;
+}
+.why a{
+    cursor: pointer;
+    display: inline-block;
+    padding: 20px 30px;
+    color: azure;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    /* margin-left: 10%; */
+}
+
+.logo .primary-text{
+    color: var(--secondary-color);
+    font-style: oblique;
+}
+.content{
+    display: flex;
+    
+}
+
+.navbar ul li{
+    position: relative;
+    height: 40px;
+    list-style: none;
+    
+    padding-left: 10px;
+    
+    border-left: 2px solid var(--secondary-color);
+}
+.navbar ul li a{
+    justify-content: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    height: 100%;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.link::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: var(--secondary-color);
+    position: absolute;
+    border-radius :10px;
+  
+    top: 5px;
+    left: -1px;
+    transform: translateX(-50%);
+    border: 2px solid var(--secondary-color);
+  }
+  .active::after,
+  .link:hover::after {
+    /* text-decoration: none; */
+    width: 8px;
+    height: 8px;
+    color: var(--secondary-color);
+  }
+  .navbar{
+    display: flex;
+    position: fixed;
+    /* background: #e02b2b; */
+    
+  }
+ .social {
+    position: fixed;
+    top: 40px;
+    left: 93%;
+    width: 7%;
+    display: flex;
+    flex-direction: column;
+    
+    /* background: #886464; */
+}
+.social a{
+    padding: 3px;
+    color: var(--primary-color);
+}
+.page{
+    height: 100vh
+}
+#gym{
+    background: url("images/gymmen.jpg") no-repeat
+    center center/cover;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.gymh h1{
+    position: relative;
+    display: inline-block;
+    margin-top: 20%;
+    margin-left: 10px ;
+    color: #fff;
+    /* background: #e02b2b; */
+}
+.gymp p{
+    display: inline-block;
+    /* background: #e02b2b; */
+    color: #fff;
+    justify-content: center;
+    margin-left: 10px;
+    
+}
+.gymp{
+    
+    align-items: center;
+}
+.btn{
+    transition: all 0.3s ease-in;
+}
+.btnm{
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    color: azure;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    margin-left: 30%;
+    /* margin-bottom: 300px; */
+}
+.membtn{
+    margin-top: 2%;
+    margin-left: -35%;
+}
+.trainh{
+    position: absolute;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    /* background: #e02b2b; */
+    justify-content: center;
+    align-items: center;
+    margin-left: 70%;
+    margin-top: 29%;
+}
+.trainh a {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    color: azure;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    /* margin-left: 0%; */
+}

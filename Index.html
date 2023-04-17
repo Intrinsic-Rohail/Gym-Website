@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Index</title>
+</head>
+<body >
+    <section id="header" class="page">
+
+        <div class="logo"><h1>Hostel City <span class="primary-text">Gym</span></h1></div>
+        <div class="content">
+            <nav class="navbar">
+                <ul>
+                    <li class="link active link1"><a href="#header" class="btn">HOME</a></li>
+                    <li class="link link2"><a href="#gym" class="btn">GYM</a></li>
+                    <li class="link link3"><a href="#membership" class="btn">MEMBERSHIP</a></li>
+                    <li class="link link4"><a href="#training" class="btn">TRAINING</a></li>
+
+                </ul>
+            </nav>
+
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x "></i></a>
+                <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+            <div class="quote">
+                <h1 style="font-size: 50px;">IRON DON'T <span style="color: #e02b2b; font-style: oblique;">LIE</span> </h1>
+            </div>
+            <div class="why">
+                <a href="#gym" class="whyb">WHY US</a>
+            </div>
+        </div>
+
+    </section>
+    <section id="gym" class="page">            
+        <div class="gymh">
+            <h1 class="h-1">ONE MEMBERSHIP AND <br>
+                ACCESS <br>
+                OVER <span style="color: #e02b2b; font-style: oblique;">312 GYMS</span>   ACROSS<br>
+                PAKISTAN
+            </h1>
+            
+            
+        </div>        
+
+        <div class="gymp">
+            <p>Pakistan's Largest Gym Network.
+                <br><br>
+                Access to the best gyms across <br>
+                lahore, karachi, islamabad and 11 other cities.</p>
+        </div>
+        <div class="membtn">
+            <a href="#membership" class="btn btnm">MEMBERSHIP</a>
+        </div>
+
+        <div class="trainh">
+            <h1>OUR <span style="color: #e02b2b; font-style: oblique;">TRAINING</span>  PLAN</h1>
+            <p>Once you have determined the training needed, <br><br> you can set goals with our variety of <span>programs</span></p>
+            <a href="#training">TRAINING</a>
+        </div>
+        
+    </div>
+    
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+    <script>
+        const header = document.querySelector('.link1');
+        const gym = document.querySelector('.link2');
+        $('.btn').on('click',function(event){
+            if(this.hash!==''){
+                event.preventDefault();
+                const hash = this.hash;
+                $('html,body').animate(
+                    {
+                        scrollTop:$(hash).offset().top
+                    },
+                    800
+                );
+            }
+            
+        });
+        $('.whyb').on('click',function(event){
+            if(this.hash!==''){
+                event.preventDefault();
+                const hash = this.hash;
+                $('html,body').animate(
+                    {
+                        scrollTop:$(hash).offset().top
+                    },
+                    800
+                );
+            }
+            
+        });
+        header.addEventListener('click', function(){ 
+            header.classList.add('active');
+            gym.classList.remove('active');
+         });
+        gym.addEventListener('click', function(){ 
+            gym.classList.add('active');
+            header.classList.remove('active');
+         });
+    </script>
+</body>
+</html>
